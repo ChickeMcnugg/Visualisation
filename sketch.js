@@ -1,5 +1,5 @@
 let rotateMultiplier = 360;
-let squareSize = 20;
+let squareSize = 10;
 let rotateScale = 0.001;
 let timeScale = 0.00005;
 let img;
@@ -10,7 +10,7 @@ let a, b, c, d;
 let pointCount = 100000;
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(min(windowWidth, windowHeight), min(windowWidth, windowHeight));
   background(0);
   angleMode(DEGREES);
   
